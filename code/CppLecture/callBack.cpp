@@ -20,7 +20,7 @@ public:
 class FindByOwnerId
 {
 public:
-	bool operator()(const Item* item) // ItemÀ» µüÈ÷ ¼öÁ¤ÇÒ »ı°¢Àº ¾Æ´Ô const ºÙÀÌ±â
+	bool operator()(const Item* item) // Itemì„ ë”±íˆ ìˆ˜ì •í•  ìƒê°ì€ ì•„ë‹˜ const ë¶™ì´ê¸°
 	{
 		return (item->_ownerId == _ownerId);
 	}
@@ -33,17 +33,17 @@ public:
 class FindByRarity
 {
 public:
-	bool operator()(const Item* item) // ItemÀ» µüÈ÷ ¼öÁ¤ÇÒ »ı°¢Àº ¾Æ´Ô const ºÙÀÌ±â
+	bool operator()(const Item* item) // Itemì„ ë”±íˆ ìˆ˜ì •í•  ìƒê°ì€ ì•„ë‹˜ const ë¶™ì´ê¸°
 	{
 		return (item->_rarity >= _rarity);
 	}
 
 public:
-	int _rarity; // °¢±â ´Ù¸¥ °ªÀ» °¡Áú ¼ö ÀÖÀ½
+	int _rarity; // ê°ê¸° ë‹¤ë¥¸ ê°’ì„ ê°€ì§ˆ ìˆ˜ ìˆìŒ
 
 };
 
-// Item* FindItem(Item items[], int itemCount, bool(*func)(const Item*)) ÁöÁ¤µÈ ½Ã±×´ÏÃÄ ÇÔ¼öÆ÷ÀÎÅÍ¹Û¿¡ ¾²Áö¸¦ ¸øÇÏ´Â°Å¾ß.
+// Item* FindItem(Item items[], int itemCount, bool(*func)(const Item*)) ì§€ì •ëœ ì‹œê·¸ë‹ˆì³ í•¨ìˆ˜í¬ì¸í„°ë°–ì— ì“°ì§€ë¥¼ ëª»í•˜ëŠ”ê±°ì•¼.
 
 
 template<typename T>
@@ -53,7 +53,7 @@ Item* FindItem(Item items[], int itemCount, T selector)
 	for (int i = 0; i < itemCount; i++)
 	{
 		Item* item = &items[i];
-		// Todo : Á¶°ÇÃ¼Å©
+		// Todo : ì¡°ê±´ì²´í¬
 		if(selector(item))
 			return item;
 	}
@@ -64,13 +64,13 @@ Item* FindItem(Item items[], int itemCount, T selector)
 int main()
 {
 
-	// ÇÔ¼ö Æ÷ÀÎÅÍ + ÇÔ¼ö °´Ã¼ + ÅÛÇÃ¸´
+	// í•¨ìˆ˜ í¬ì¸í„° + í•¨ìˆ˜ ê°ì²´ + í…œí”Œë¦¿
 
-	// Äİ¹é (Call back) : ´Ù½Ã È£Ãâ
-	// ex) MoveTask -> ³ªÁß¿¡ ¹Ì·ï¼­, ´Ù½Ã È£Ãâ
+	// ì½œë°± (Call back) : ë‹¤ì‹œ í˜¸ì¶œ
+	// ex) MoveTask -> ë‚˜ì¤‘ì— ë¯¸ë¤„ì„œ, ë‹¤ì‹œ í˜¸ì¶œ
 
-	// ¾î¶² »óÈ²ÀÌ ÀÏ¾î³ª¸é -> ÀÌ ±â´ÉÀ» È£ÃâÇØÁà
-	// ex) UI ½ºÅ³ ¹öÆ°À» ´©¸£¸é -> ½ºÅ³À» ¾²´Â ÇÔ¼ö¸¦ È£Ãâ
+	// ì–´ë–¤ ìƒí™©ì´ ì¼ì–´ë‚˜ë©´ -> ì´ ê¸°ëŠ¥ì„ í˜¸ì¶œí•´ì¤˜
+	// ex) UI ìŠ¤í‚¬ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ -> ìŠ¤í‚¬ì„ ì“°ëŠ” í•¨ìˆ˜ë¥¼ í˜¸ì¶œ
 
 	Item items[10];
 	items[3]._ownerId = 100;

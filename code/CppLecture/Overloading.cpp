@@ -9,7 +9,7 @@ int func1(int num1, int num2) {
 }
 
 int main() {
-    //int result = func1(1); // ¸í½ÃÀûÀ¸·Î Ã¹ ¹øÂ° ÇÔ¼ö È£Ãâ
+    //int result = func1(1); // ëª…ì‹œì ìœ¼ë¡œ ì²« ë²ˆì§¸ í•¨ìˆ˜ í˜¸ì¶œ
     //std::cout << "Result: " << result << std::endl;
 
 

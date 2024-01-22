@@ -6,85 +6,85 @@ using namespace std;
 int main()
 {
 
-	// const Æ÷ÀÎÅÍ¶õ ?
-	// const¶ó´Â Å°¿öµå´Â º¯¼ö¸¦ »ó¼öÈ­ ½ÃÅ³¶§ »ç¿ëÇÏ´Â Å°¿öµåÀÔ´Ï´Ù.
-	// ÀÌ·¸°Ô »ó¼öÈ­ µÈ º¯¼ö´Â ÀÌÈÄ º¯°æÀÌ ºÒ°¡´ÉÇÏ¸ç Æ÷ÀÎÅÍ º¯¼ö¿¡ const Å°¿öµå¸¦ ºÙ¿©µµ °°Àº µ¿ÀÛÀ» ÇÕ´Ï´Ù.
-	// ´Ù¸¸ constÀÇ À§Ä¡°¡ ¾îµð·Î °¡´À³Ä¿¡ µû¶ó ÀÇ¹Ì°¡ ´Ù¸¨´Ï´Ù.
+	// const í¬ì¸í„°ëž€ ?
+	// constë¼ëŠ” í‚¤ì›Œë“œëŠ” ë³€ìˆ˜ë¥¼ ìƒìˆ˜í™” ì‹œí‚¬ë•Œ ì‚¬ìš©í•˜ëŠ” í‚¤ì›Œë“œìž…ë‹ˆë‹¤.
+	// ì´ë ‡ê²Œ ìƒìˆ˜í™” ëœ ë³€ìˆ˜ëŠ” ì´í›„ ë³€ê²½ì´ ë¶ˆê°€ëŠ¥í•˜ë©° í¬ì¸í„° ë³€ìˆ˜ì— const í‚¤ì›Œë“œë¥¼ ë¶™ì—¬ë„ ê°™ì€ ë™ìž‘ì„ í•©ë‹ˆë‹¤.
+	// ë‹¤ë§Œ constì˜ ìœ„ì¹˜ê°€ ì–´ë””ë¡œ ê°€ëŠëƒì— ë”°ë¼ ì˜ë¯¸ê°€ ë‹¤ë¦…ë‹ˆë‹¤.
 
 
 	//int a = 100;
 
-	////1) const ÀÚ·áÇü º¯¼ö¸í = ÃÊ±â°ª 
+	////1) const ìžë£Œí˜• ë³€ìˆ˜ëª… = ì´ˆê¸°ê°’ 
 	//const int* ptr = &a;
 
-	////2) ÀÚ·áÇü const º¯¼ö¸í = ÃÊ±â°ª 
+	////2) ìžë£Œí˜• const ë³€ìˆ˜ëª… = ì´ˆê¸°ê°’ 
 	//int const* ptr2 = &a;
 
-	////3) const ÀÚ·áÇü const º¯¼ö¸í = ÃÊ±â°ª 
+	////3) const ìžë£Œí˜• const ë³€ìˆ˜ëª… = ì´ˆê¸°ê°’ 
 	//const int const* ptr3 = &a;
 
 
 
-	//// »ó¼ö Æ÷ÀÎÅÍ(const pointer)
+	//// ìƒìˆ˜ í¬ì¸í„°(const pointer)
 	//int a = 100;
 	//int b = 200;
 
-	////non const Æ÷ÀÎÅÍ
+	////non const í¬ì¸í„°
 	//int* ptr = &a;
-	//ptr = &b; //ÁÖ¼Ò º¯°æ °¡´É
-	//*ptr = 300; //°ª º¯°æ °¡´É
+	//ptr = &b; //ì£¼ì†Œ ë³€ê²½ ê°€ëŠ¥
+	//*ptr = 300; //ê°’ ë³€ê²½ ê°€ëŠ¥
 
-	////»ó¼ö Æ÷ÀÎÅÍ(const pointer)
+	////ìƒìˆ˜ í¬ì¸í„°(const pointer)
 	//int* const ptr2 = &a;
-	//// ptr2 = &b; //Æ÷ÀÎÅÍ°¡ »ó¼öÀÌ¹Ç·Î º¯°æ ºÒ°¡´É
-	//*ptr2 = 300; //°ªÀº º¯°æ °¡´É
+	//// ptr2 = &b; //í¬ì¸í„°ê°€ ìƒìˆ˜ì´ë¯€ë¡œ ë³€ê²½ ë¶ˆê°€ëŠ¥
+	//*ptr2 = 300; //ê°’ì€ ë³€ê²½ ê°€ëŠ¥
 
 
 
 	//int* const ptr = &a;
 
-	//// ÀÏ¹ÝÀûÀ¸·Î »ó¼ö Æ÷ÀÎÅÍ¶ó°í ÇÏ¸é À§¿Í °°ÀÌ »ç¿ëÇÑ´Ù°í º¸½Ã¸é µË´Ï´Ù.
-	//// constÀÇ ¿ìÃø¿¡ Æ÷ÀÎÅÍ º¯¼öÀÇ °ªÀÌ À§Ä¡ÇÕ´Ï´Ù.
-	//// Áï Æ÷ÀÎÅÍ º¯¼ö¸¦ constÇÏ°Ú´Ù´Â ¶æÀÌ¸ç ¼±¾ð°ú µ¿½Ã¿¡ ÃÊ±âÈ­¸¦ ÇØÁÖ¼Å¾ß ÇÕ´Ï´Ù.
-	//// ÀÌ °æ¿ì ÃÊ±â¿¡ ÀúÀåµÈ Æ÷ÀÎÅÍ º¯¼öÀÇ °ªÀº º¯°æÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.
+	//// ì¼ë°˜ì ìœ¼ë¡œ ìƒìˆ˜ í¬ì¸í„°ë¼ê³  í•˜ë©´ ìœ„ì™€ ê°™ì´ ì‚¬ìš©í•œë‹¤ê³  ë³´ì‹œë©´ ë©ë‹ˆë‹¤.
+	//// constì˜ ìš°ì¸¡ì— í¬ì¸í„° ë³€ìˆ˜ì˜ ê°’ì´ ìœ„ì¹˜í•©ë‹ˆë‹¤.
+	//// ì¦‰ í¬ì¸í„° ë³€ìˆ˜ë¥¼ constí•˜ê² ë‹¤ëŠ” ëœ»ì´ë©° ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”ë¥¼ í•´ì£¼ì…”ì•¼ í•©ë‹ˆë‹¤.
+	//// ì´ ê²½ìš° ì´ˆê¸°ì— ì €ìž¥ëœ í¬ì¸í„° ë³€ìˆ˜ì˜ ê°’ì€ ë³€ê²½ì´ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
 
 
 
 	//// -------------------------------//
-	//// »ó¼ö¿¡ ´ëÇÑ Æ÷ÀÎÅÍ(Pointer to Const)
+	//// ìƒìˆ˜ì— ëŒ€í•œ í¬ì¸í„°(Pointer to Const)
 	//int a = 100;
 	//int b = 200;
 
-	////non const Æ÷ÀÎÅÍ
+	////non const í¬ì¸í„°
 	//int* ptr = &a;
-	//ptr = &b; //ÁÖ¼Ò º¯°æ °¡´É
-	//*ptr = 300; //°ª º¯°æ °¡´É
+	//ptr = &b; //ì£¼ì†Œ ë³€ê²½ ê°€ëŠ¥
+	//*ptr = 300; //ê°’ ë³€ê²½ ê°€ëŠ¥
 
-	////»ó¼ö¿¡ ´ëÇÑ Æ÷ÀÎÅÍ
+	////ìƒìˆ˜ì— ëŒ€í•œ í¬ì¸í„°
 	//const int* ptr2 = &a;
-	//ptr2 = &b; //Æ÷ÀÎÅÍ°¡ »ó¼ö°¡ ¾Æ´Ï¹Ç·Î º¯°æ °¡´É
-	////*ptr2 = 300; //°¡¸®Å°´Â °ªÀÌ »ó¼öÀÌ¹Ç·Î º¯°æ ºÒ°¡´É
+	//ptr2 = &b; //í¬ì¸í„°ê°€ ìƒìˆ˜ê°€ ì•„ë‹ˆë¯€ë¡œ ë³€ê²½ ê°€ëŠ¥
+	////*ptr2 = 300; //ê°€ë¦¬í‚¤ëŠ” ê°’ì´ ìƒìˆ˜ì´ë¯€ë¡œ ë³€ê²½ ë¶ˆê°€ëŠ¥
 	//const int* ptr = &a;
 
-	//// const Å°¿öµå°¡ °¡Àå ÁÂÃø¿¡ À§Ä¡ÇÏ¸é ÀÌ´Â int* ptr À» »ó¼öÈ­ ÇÏ°Ú´Ù´Â ¶æÀÌ µË´Ï´Ù.
-	//// Áï* ptrÀÌ »ó¼ö°¡ µÇ´Â°ÍÀÌÁö¿ä.ÀÌ·¸°Ô µÈ´Ù¸é* ptrÀÌ °¡¸®Å°´Â °ªÀÌ »ó¼ö°¡ µÇ¾î °ªÀ» º¯°æÇÒ ¼ö ¾ø°Ô µË´Ï´Ù.
+	//// const í‚¤ì›Œë“œê°€ ê°€ìž¥ ì¢Œì¸¡ì— ìœ„ì¹˜í•˜ë©´ ì´ëŠ” int* ptr ì„ ìƒìˆ˜í™” í•˜ê² ë‹¤ëŠ” ëœ»ì´ ë©ë‹ˆë‹¤.
+	//// ì¦‰* ptrì´ ìƒìˆ˜ê°€ ë˜ëŠ”ê²ƒì´ì§€ìš”.ì´ë ‡ê²Œ ëœë‹¤ë©´* ptrì´ ê°€ë¦¬í‚¤ëŠ” ê°’ì´ ìƒìˆ˜ê°€ ë˜ì–´ ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ê²Œ ë©ë‹ˆë‹¤.
 	
 	
 	// -------------------------------//
-	// »ó¼ö¿¡ ´ëÇÑ »ó¼ö Æ÷ÀÎÅÍ(Const Pointer to Const)
+	// ìƒìˆ˜ì— ëŒ€í•œ ìƒìˆ˜ í¬ì¸í„°(Const Pointer to Const)
 
 	int a = 100;
 	int b = 200;
 
-	//non const Æ÷ÀÎÅÍ
+	//non const í¬ì¸í„°
 	int* ptr = &a;
-	ptr = &b; //ÁÖ¼Ò º¯°æ °¡´É
-	*ptr = 300; //°ª º¯°æ °¡´É
+	ptr = &b; //ì£¼ì†Œ ë³€ê²½ ê°€ëŠ¥
+	*ptr = 300; //ê°’ ë³€ê²½ ê°€ëŠ¥
 
-	//»ó¼ö¿¡ ´ëÇÑ »ó¼ö Æ÷ÀÎÅÍ
+	//ìƒìˆ˜ì— ëŒ€í•œ ìƒìˆ˜ í¬ì¸í„°
 	const int* const ptr2 = &a;
-	//ptr2 = &b; //Æ÷ÀÎÅÍ°¡ »ó¼öÀÌ¹Ç·Î º¯°æ ºÒ°¡´É
-	//*ptr2 = 300; //°¡¸®Å°´Â °ªÀÌ »ó¼öÀÌ¹Ç·Î º¯°æ ºÒ°¡´É
+	//ptr2 = &b; //í¬ì¸í„°ê°€ ìƒìˆ˜ì´ë¯€ë¡œ ë³€ê²½ ë¶ˆê°€ëŠ¥
+	//*ptr2 = 300; //ê°€ë¦¬í‚¤ëŠ” ê°’ì´ ìƒìˆ˜ì´ë¯€ë¡œ ë³€ê²½ ë¶ˆê°€ëŠ¥
 
 
 }

@@ -2,7 +2,7 @@
 using namespace std;
 
 
-// ¿À´ÃÀÇ ÁÖÁ¦ : ÇÔ¼ö °´Ã¼
+// ì˜¤ëŠ˜ì˜ ì£¼ì œ : í•¨ìˆ˜ ê°ì²´
 
 void HelloWorld()
 {
@@ -21,7 +21,7 @@ public:
 	}
 
 private:
-	int _hp = 100; // a) ³ªÀÌÆ®ÀÇ »óÅÂ °ª
+	int _hp = 100; // a) ë‚˜ì´íŠ¸ì˜ ìƒíƒœ ê°’
 };
 
 
@@ -33,7 +33,7 @@ public:
 
 	}*/
 	
-	/* ´Ù¸¥°Å¿¡¼­ °¡Á®¿Â ¿¹½Ã
+	/* ë‹¤ë¥¸ê±°ì—ì„œ ê°€ì ¸ì˜¨ ì˜ˆì‹œ
 	OperatorTest operator+(OperatorTest& ref)
 	{
 		return OperatorTest(this->_num + ref._num);
@@ -67,7 +67,7 @@ class MoveTask
 public:
 	void operator()()
 	{
-		cout << "ÇØ´ç ÁÂÇ¥·Î ÇÃ·¹ÀÌ¾î ÀÌµ¿" << endl;
+		cout << "í•´ë‹¹ ì¢Œí‘œë¡œ í”Œë ˆì´ì–´ ì´ë™" << endl;
 	}
 
 public:
@@ -79,26 +79,26 @@ public:
 
 int main()
 {
-	// ÇÔ¼ö °´Ã¼ (Functor) : ÇÔ¼öÃ³·³ µ¿ÀÛÇÏ´Â °´Ã¼
-	// »ç¿ë ÀÌÀ¯: ÇÔ¼ö Æ÷ÀÎÅÍÀÇ ´ÜÁ¡À» º¸¿ÏÇÏ±âÀ§ÇØ
-	// ¿ÏÀüÈ÷ °°Àº ½Ã±×´ÏÃÄ¸¸ »ç¿ë °¡´ÉÇß¾ú´Ù.
+	// í•¨ìˆ˜ ê°ì²´ (Functor) : í•¨ìˆ˜ì²˜ëŸ¼ ë™ìž‘í•˜ëŠ” ê°ì²´
+	// ì‚¬ìš© ì´ìœ : í•¨ìˆ˜ í¬ì¸í„°ì˜ ë‹¨ì ì„ ë³´ì™„í•˜ê¸°ìœ„í•´
+	// ì™„ì „ížˆ ê°™ì€ ì‹œê·¸ë‹ˆì³ë§Œ ì‚¬ìš© ê°€ëŠ¥í–ˆì—ˆë‹¤.
 
-	// ÇÔ¼ö Æ÷ÀÎÅÍ ¼±¾ð
+	// í•¨ìˆ˜ í¬ì¸í„° ì„ ì–¸
 	void (*pfunc)(void);
 	
-	// µ¿ÀÛÀº ³Ñ°ÜÁÙ ¶§ À¯¿ëÇÏ´Ù.
+	// ë™ìž‘ì€ ë„˜ê²¨ì¤„ ë•Œ ìœ ìš©í•˜ë‹¤.
 	pfunc = &HelloWorld;
 	(*pfunc)();
 
-	// ÇÔ¼ö Æ÷ÀÎÅÍ ´ÙÁ¡
-	// 1) ½Ã±×´ÏÃÄ°¡ ¾È ¸ÂÀ¸¸é »ç¿ëÇÒ ¼ö ¾ø´Ù.
-	// 2) »óÅÂ¸¦ °¡Áú ¼ö ¾ø´Ù. »óÅÂ = ÇÔ¼ö¿¡ ÀúÀå µÇ´Â °ª -> a)
+	// í•¨ìˆ˜ í¬ì¸í„° ë‹¤ì 
+	// 1) ì‹œê·¸ë‹ˆì³ê°€ ì•ˆ ë§žìœ¼ë©´ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤.
+	// 2) ìƒíƒœë¥¼ ê°€ì§ˆ ìˆ˜ ì—†ë‹¤. ìƒíƒœ = í•¨ìˆ˜ì— ì €ìž¥ ë˜ëŠ” ê°’ -> a)
 	
 
 
 
-	// ÇÔ¼ö Ã³·³ µ¿ÀÛÇÏ´Â °´Ã¼
-	// () ¿¬»êÀÚ ¿À¹ö·Îµù 
+	// í•¨ìˆ˜ ì²˜ëŸ¼ ë™ìž‘í•˜ëŠ” ê°ì²´
+	// () ì—°ì‚°ìž ì˜¤ë²„ë¡œë”© 
 	HelloWorld();
 
 
@@ -108,23 +108,23 @@ int main()
 	functor();
 	bool ret = functor(3);
 	
-	// STLÀ» °øºÎÇÏ°Ô µÇ¸é ÀÚÁÖ¾²°Ô µÉ °Í.
+	// STLì„ ê³µë¶€í•˜ê²Œ ë˜ë©´ ìžì£¼ì“°ê²Œ ë  ê²ƒ.
 
-	// MMO¿¡¼­ ÇÔ¼ö °´Ã¼¸¦ »ç¿ëÇÏ´Â ¿¹½Ã
-	// client(gameÀ» ±×·ÁÁÜ) <-> server (gameÀÇ judge)
-	// server : client °¡ º¸³»ÁØ ³×Æ®¿öÅ© ÆÐÅ¶À» ¹Þ¾Æ¼­ Ã³¸®
-	// ex) client -> ³ª¸¦ (5,0) ÁÂÇ¥·Î ÀÌµ¿ ½ÃÄÑÁà 
-	// µ¿½Ã´Ù¹ßÀûÀ¸·Î ¸í·ÉÀ» È£ÃâÇÏ¸é, ¼­¹ö´Â ºÎ´ãÀÌµÇ´Ï, ÀÏ´Ü ¿äÃ»À» °´Ã¼·Î ¸¸µé¾î µÎ°í
-	// ¼ø¼­´ë·Î ¸í·ÉÀ» Ã³¸®ÇÑ´Ù.
+	// MMOì—ì„œ í•¨ìˆ˜ ê°ì²´ë¥¼ ì‚¬ìš©í•˜ëŠ” ì˜ˆì‹œ
+	// client(gameì„ ê·¸ë ¤ì¤Œ) <-> server (gameì˜ judge)
+	// server : client ê°€ ë³´ë‚´ì¤€ ë„¤íŠ¸ì›Œí¬ íŒ¨í‚·ì„ ë°›ì•„ì„œ ì²˜ë¦¬
+	// ex) client -> ë‚˜ë¥¼ (5,0) ì¢Œí‘œë¡œ ì´ë™ ì‹œì¼œì¤˜ 
+	// ë™ì‹œë‹¤ë°œì ìœ¼ë¡œ ëª…ë ¹ì„ í˜¸ì¶œí•˜ë©´, ì„œë²„ëŠ” ë¶€ë‹´ì´ë˜ë‹ˆ, ì¼ë‹¨ ìš”ì²­ì„ ê°ì²´ë¡œ ë§Œë“¤ì–´ ë‘ê³ 
+	// ìˆœì„œëŒ€ë¡œ ëª…ë ¹ì„ ì²˜ë¦¬í•œë‹¤.
 
 
-	// ÀÏ´Ü ¸¸µé¾îÁÖ°í
+	// ì¼ë‹¨ ë§Œë“¤ì–´ì£¼ê³ 
 	MoveTask task;
 	task._playerId = 100;
 	task._posX = 5;
 	task._posY = 0;
 
-	// ³ªÁß¿¡ ¿©À¯ µÉ ¶§ ÀÏ°¨À» ½ÇÇàÇÑ´Ù.
+	// ë‚˜ì¤‘ì— ì—¬ìœ  ë  ë•Œ ì¼ê°ì„ ì‹¤í–‰í•œë‹¤.
 	task();
 
 	

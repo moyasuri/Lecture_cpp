@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// Å¬·¡½º ÅÛÇÃ¸´
+// í´ëž˜ìŠ¤ í…œí”Œë¦¿
 
 
 
 
-// randombox°¡ Áö±ÝÀº int¸¦ returnÇÏÁö¸¸, float¸¦ returnÇÑ´Ù¸é... ¶È°°Àº Å¬·¡½º¸¦ ÇÏ³ª ´õ¸¸µé¾îÁà¾ßÇÏ´Âµ¥
-// ³Ê¹«³ª ºñÈ¿À²ÀûÀÌ´Ù.
+// randomboxê°€ ì§€ê¸ˆì€ intë¥¼ returní•˜ì§€ë§Œ, floatë¥¼ returní•œë‹¤ë©´... ë˜‘ê°™ì€ í´ëž˜ìŠ¤ë¥¼ í•˜ë‚˜ ë”ë§Œë“¤ì–´ì¤˜ì•¼í•˜ëŠ”ë°
+// ë„ˆë¬´ë‚˜ ë¹„íš¨ìœ¨ì ì´ë‹¤.
 //class RandomBox
 //{
 //public:
@@ -25,13 +25,13 @@ using namespace std;
 
 
 
-// typename T¸¦ ºÙÀÌ¸é ¾î¶² Å¸ÀÔµµ °¡´ÉÇÏ´Ù.
-// ±×·±µ¥ ¹«Á¶°Ç typenameÀ» ºÙ¾î¾ß ÇÏ´Â °Ç ¾Æ´Ï´Ù.
+// typename Të¥¼ ë¶™ì´ë©´ ì–´ë–¤ íƒ€ìž…ë„ ê°€ëŠ¥í•˜ë‹¤.
+// ê·¸ëŸ°ë° ë¬´ì¡°ê±´ typenameì„ ë¶™ì–´ì•¼ í•˜ëŠ” ê±´ ì•„ë‹ˆë‹¤.
 
 
 // template<typename T>
-// template<typename T,int SIZE = 10 > // int SIZE´Â ÀÌÁ¦ ·£´ýÀÌ¾Æ´Ï¶ó, »çÀÌÁî¸¦ Á÷Á¢ °í¸£°Ô µÊ. (defualt°ªµµ °¡´É)
-// template< > ¾È¿¡ µé¾î°¡´Â°Ç [°ñ¶óÁà¾ß ÇÏ´Â ¸ñ·Ï]ÀÌ¶ó°í º¼ ¼ö ÀÖÀ½.
+// template<typename T,int SIZE = 10 > // int SIZEëŠ” ì´ì œ ëžœë¤ì´ì•„ë‹ˆë¼, ì‚¬ì´ì¦ˆë¥¼ ì§ì ‘ ê³ ë¥´ê²Œ ë¨. (defualtê°’ë„ ê°€ëŠ¥)
+// template< > ì•ˆì— ë“¤ì–´ê°€ëŠ”ê±´ [ê³¨ë¼ì¤˜ì•¼ í•˜ëŠ” ëª©ë¡]ì´ë¼ê³  ë³¼ ìˆ˜ ìžˆìŒ.
 template<typename T, int SIZE>
 class RandomBox
 {
@@ -48,8 +48,8 @@ public:
 };
 
 
-// ÅÛÇÃ¸´ Æ¯¼öÈ­
-// ¾î¶² Æ¯¼öÇÑ Á¶°Ç¿¡¼­´Â ÅÛÇÃ¸´ÀÌ ±× Á¶°Ç¿¡¸Â°Ô »ý¼ºÀÌ µÇ°ÔÇÏÀÚ.
+// í…œí”Œë¦¿ íŠ¹ìˆ˜í™”
+// ì–´ë–¤ íŠ¹ìˆ˜í•œ ì¡°ê±´ì—ì„œëŠ” í…œí”Œë¦¿ì´ ê·¸ ì¡°ê±´ì—ë§žê²Œ ìƒì„±ì´ ë˜ê²Œí•˜ìž.
 
 
 template<int SIZE>
@@ -94,8 +94,8 @@ int main()
 
 
 
-	// rb1 = rb2; // ¼º¸³ÀÌ ¾ÈµÊ, ÅÛÇÃ¸´À¸·Î ¸¸µé¾îÁø µÎ Å¬·¡½º´Â ¿ÏÀüÈ÷ ´Ù¸¥ Å¬·¡½ºÀÌ´Ù. 
-	// µé¾î°£ ÀÎÀÚ°¡ ¿ÏÀüÈ÷ ÀÏÄ¡ÇÑ´Ù¸é °¡´ÉÇÏ´Ù.
+	// rb1 = rb2; // ì„±ë¦½ì´ ì•ˆë¨, í…œí”Œë¦¿ìœ¼ë¡œ ë§Œë“¤ì–´ì§„ ë‘ í´ëž˜ìŠ¤ëŠ” ì™„ì „ížˆ ë‹¤ë¥¸ í´ëž˜ìŠ¤ì´ë‹¤. 
+	// ë“¤ì–´ê°„ ì¸ìžê°€ ì™„ì „ížˆ ì¼ì¹˜í•œë‹¤ë©´ ê°€ëŠ¥í•˜ë‹¤.
 
 
 
