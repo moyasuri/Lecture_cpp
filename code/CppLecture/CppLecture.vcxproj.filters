@@ -16,6 +16,15 @@
     <Filter Include="소스 파일\1">
       <UniqueIdentifier>{fe3ceca6-63a2-4393-99f5-2e90bc309d9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\24">
+      <UniqueIdentifier>{15ae626d-e39f-4adb-971c-a3a28cc08d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\객체지향">
+      <UniqueIdentifier>{c3e06ce2-bb27-4c03-910a-6f6d7e8f8675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\동적할당">
+      <UniqueIdentifier>{78d68bce-74be-4ffa-bb8f-0b403f86c8d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Namespace.cpp">
@@ -48,7 +57,7 @@
     <ClCompile Include="callBack.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="List.cpp">
+    <ClCompile Include="List_class.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="pointerConst.cpp">
@@ -75,5 +84,76 @@
     <ClCompile Include="execution.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="List_struct.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="reference.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0124.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="0124_1.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="getline.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="assign.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="structure.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="ObejctOrientation.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstructorDistructor.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="inheritance.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="EnCapsulation.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="Polymorphismcpp.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="Initialization.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="0126.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="0126_1.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="question.cpp">
+      <Filter>소스 파일\24</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator_Overloading.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="Conclusion.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicAllocadtion01.cpp">
+      <Filter>소스 파일\동적할당</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일\동적할당</Filter>
+    </ClCompile>
+    <ClCompile Include="myfunction.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="myfunction2.cpp">
+      <Filter>소스 파일\객체지향</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myfunction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
