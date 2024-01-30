@@ -147,8 +147,11 @@
     <ClCompile Include="myfunction.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="myfunction2.cpp">
-      <Filter>소스 파일\객체지향</Filter>
+    <ClCompile Include="TypeConversion.cpp">
+      <Filter>소스 파일\동적할당</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeConversion2.cpp">
+      <Filter>소스 파일\동적할당</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
