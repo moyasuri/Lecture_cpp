@@ -152,12 +152,15 @@
     </ClCompile>
     <ClCompile Include="TypeConversion2.cpp">
       <Filter>소스 파일\동적할당</Filter>
+<<<<<<< HEAD
+=======
     </ClCompile>
     <ClCompile Include="0130.cpp">
       <Filter>소스 파일\동적할당</Filter>
     </ClCompile>
     <ClCompile Include="소스.cpp">
       <Filter>소스 파일\객체지향</Filter>
+>>>>>>> c52f8c6274a0e7e04d1ff4846597d8577e26ccb5
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -243,9 +243,13 @@
     <ClCompile Include="TypeConversion.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="TypeConversion2.cpp" />
+=======
     <ClCompile Include="TypeConversion2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+>>>>>>> c52f8c6274a0e7e04d1ff4846597d8577e26ccb5
     <ClCompile Include="Vecotr1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
