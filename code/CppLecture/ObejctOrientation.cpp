@@ -82,3 +82,47 @@ int main()
 
 
 }
+
+
+1)
+class Animal {
+protected:
+	int _age;
+};
+
+2)
+
+class Cat : _age(2) {
+public:
+	Cat() {}
+
+public:
+	int_age;
+};
+
+class Dog : _age(4) {
+public:
+	Dog() {}
+
+public:
+	int _age;
+};
+
+3) class Animal {
+public:
+	virtual void AnimalSpeak{} = 0;
+};
+
+class Cat {
+public:
+	void AnimalSpeak() {
+		cout << "냐옹";
+	}
+};
+
+class Dog {
+public:
+	void AnimalSpeak() {
+		cout << "멍멍";
+	}
+};
