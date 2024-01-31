@@ -13,98 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\1">
-      <UniqueIdentifier>{fe3ceca6-63a2-4393-99f5-2e90bc309d9a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\24">
-      <UniqueIdentifier>{15ae626d-e39f-4adb-971c-a3a28cc08d51}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\객체지향">
       <UniqueIdentifier>{c3e06ce2-bb27-4c03-910a-6f6d7e8f8675}</UniqueIdentifier>
     </Filter>
     <Filter Include="소스 파일\동적할당">
       <UniqueIdentifier>{78d68bce-74be-4ffa-bb8f-0b403f86c8d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Inbox">
+      <UniqueIdentifier>{be334c9c-3570-4b27-aa49-5e242c0ac9e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Namespace.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DataType.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Input.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="template.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Overloading.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="template2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="funcPtr.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="funcPtr2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="funcObj.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="callBack.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="List_class.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="pointerConst.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Vecotr1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="fst.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bitShift.cpp">
-      <Filter>소스 파일\1</Filter>
-    </ClCompile>
-    <ClCompile Include="1.cpp">
-      <Filter>소스 파일\1</Filter>
-    </ClCompile>
-    <ClCompile Include="array.cpp">
-      <Filter>소스 파일\1</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithm.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="execution.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="List_struct.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="reference.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="0124.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="0124_1.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="getline.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="assign.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="structure.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
     <ClCompile Include="ObejctOrientation.cpp">
       <Filter>소스 파일\객체지향</Filter>
     </ClCompile>
@@ -123,15 +42,6 @@
     <ClCompile Include="Initialization.cpp">
       <Filter>소스 파일\객체지향</Filter>
     </ClCompile>
-    <ClCompile Include="0126.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="0126_1.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
-    <ClCompile Include="question.cpp">
-      <Filter>소스 파일\24</Filter>
-    </ClCompile>
     <ClCompile Include="Operator_Overloading.cpp">
       <Filter>소스 파일\객체지향</Filter>
     </ClCompile>
@@ -141,17 +51,86 @@
     <ClCompile Include="DynamicAllocadtion01.cpp">
       <Filter>소스 파일\동적할당</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일\동적할당</Filter>
-    </ClCompile>
-    <ClCompile Include="myfunction.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
     <ClCompile Include="TypeConversion.cpp">
       <Filter>소스 파일\동적할당</Filter>
     </ClCompile>
     <ClCompile Include="TypeConversion2.cpp">
       <Filter>소스 파일\동적할당</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="array.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="assign.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="bitShift.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="callBack.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="DataType.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="execution.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="funcObj.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="funcPtr.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="funcPtr2.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="getline.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="List_class.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="List_struct.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Namespace.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Overloading.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="pointerConst.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="reference.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="structure.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="template2.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Vecotr1.cpp">
+      <Filter>소스 파일\Inbox</Filter>
+    </ClCompile>
+    <ClCompile Include="myfunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="vftableEx.cpp">
+      <Filter>소스 파일\객체지향</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

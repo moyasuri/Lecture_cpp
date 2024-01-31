@@ -1,9 +1,18 @@
 #include "myfunction.h"
 
 
-int add(int a, int b)
+
+int factorial(int var)
 {
-	return a + b;
-
-
+	if (var <= 1)
+		return 1;
+	return var * factorial(var - 1);
 }
+
+
+
+int myfunction::square(int number)
+{
+	cout << number;
+	return number * number;
+} 
