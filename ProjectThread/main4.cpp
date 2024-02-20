@@ -6,7 +6,7 @@ std::atomic<int> counter(0);
 
 void increment() {
     for (int i = 0; i < 10; ++i) {
-        //counter.fetch_add(1, std::memory_order_relaxed);
+        counter.fetch_add(1, std::memory_order_relaxed);
         counter++;
     }
     std::cout << "counter: " << counter << std::endl;

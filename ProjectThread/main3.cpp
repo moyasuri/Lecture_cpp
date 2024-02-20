@@ -6,12 +6,12 @@ std::mutex mtx;
 int a = 0;
 
 void someFunction() {
-    //mtx.lock();
-    // °øÀ¯ µ¥ÀÌÅÍ¿¡ ´ëÇÑ ¾ÈÀüÇÑ ÀÛ¾÷ ¼öÇà
+    mtx.lock();
+    // ê³µìœ  ë°ì´í„°ì— ëŒ€í•œ ì•ˆì „í•œ ì‘ì—… ìˆ˜í–‰
     for (int i = 0; i < 10; i++)
         std::cout << "a " << a++ << std::endl;
     a *= 2;
-    //mtx.unlock();
+    mtx.unlock();
 }
 
 int main() {
@@ -19,12 +19,12 @@ int main() {
     std::thread t2(someFunction);
     std::thread t3(someFunction);
     std::thread t4(someFunction);
-    /*for (int i = 0; i < 1500000; i++) {
+    //for (int i = 0; i < 1500000; i++) {
 
-    }*/
-    /*mtx.lock();
+    //}
+    mtx.lock();
     std::cout << "abcdfadf" << "aefasdf" << std::endl;
-    mtx.unlock();*/
+    mtx.unlock();
     t1.join();
     t2.join();
     t3.join();
